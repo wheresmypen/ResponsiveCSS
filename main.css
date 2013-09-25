@@ -1,0 +1,18 @@
+/* And I don't just do HTML, but assoicated HTML as well! */
+
+ol {
+	list-style: none
+}
+
+#mainBody {
+	max-width: 850px;
+	width:70%;
+}
+
+
+
+@media (max-width:850px) {
+	#mainBody {
+    padding: 50px
+  	}
+}
