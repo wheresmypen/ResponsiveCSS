@@ -1,18 +1,210 @@
-/* And I don't just do HTML, but assoicated HTML as well! */
+/* And I don't just do HTML - but assoicated HTML as well! */
+
+
+body {
+	width:100%;
+}
+
+/* This section of CSS provides the inial layout of the mainbody and sidebar for full-screen view. */
+
+#mainBody {
+	/*float:right;*/
+	/*position:absolute;*/
+	/*left:320px;*/
+	top:0px;
+	/*display: inline-block;*/
+	max-width: 850px;
+	margin 1.5%
+	width:70%;
+	overflow: hidden;
+	/*display:none;*/
+}
+
+#sidebar {
+	width:30%;
+	min-width: 320px;
+	background-color: #bfbfbf;
+	/*position: fixed;*/
+	top:0px;left:0px;
+	margin:1.5%;
+	float:left;
+	overflow: hidden;
+}
+
+
+/* This section reverts the section removes float and 'stacks' the elements for small widths */
+
+
+/* This section adds padding for smaller widths */
+
+
+/* cleans up list display for items */
 
 ol {
 	list-style: none
 }
 
-#mainBody {
-	max-width: 850px;
-	width:70%;
+/*@media screen and (max-width:1081px) {
+	#mainBody {
+    position:absolute;
+    left:320px;
+  	}
+}*/
+
+
+/* This is the formatting for the navigation menu between the body elements. */
+
+.menu {
+	/*float: left;*/
+	display: inline-block;
+	text-decoration: none;
+	color:white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu:hover {color: yellow}
+
+
+.leftend {
+	border-top-left-radius: 5px; border-bottom-left-radius: 5px;
 }
 
 
+.rightend {
+	border-top-right-radius: 5px; border-bottom-right-radius: 5px;
+}
 
-@media (max-width:850px) {
+
+.bar {
+	background-color:green;
+	display: inline-block;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 40px;
+	padding-right: 15px;
+	width: 75px;
+	height: 25px;
+	padding-top: 10px;
+}
+
+
+.instruction-answer{
+	text-align: center;
+}
+
+/* This is additional styling for the footer (fixed) */
+
+.barf {
+	background-color:green;
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 15px;
+	list-style: none;
+}
+
+footer {
+	/*float:right;*/
+	/*margin-left:auto;
+	margin-right:auto;*/
+	position:fixed;
+	/*display:none;*/
+	bottom:0px;
+	right:0px;
+}
+
+/* This section affects the images */
+
+#photos2display{
+	width: 100%
+}
+
+.fphoto{
+	display:inline;
+	width: 20%;
+}
+
+#fpright{
+	margin-left: 20%;
+}
+
+#pic{
+	width:15%;
+	margin-left: 22.5%;
+}
+
+.sphoto{
+	padding: 50px;
+}
+
+#picleft{
+	float:left;
+	width:250px;
+	height: 250px;
+}
+
+#picright{
+	float:right;
+	width:250px;
+	height: 250px;
+}
+
+#gallery{
+	width: 1400px;
+}
+
+
+/* MEDIA QUERIES */
+
+/* pads main body and collapses nav bar */
+
+@media screen and (max-width:700px) {
+	#sidebar {
+		float:none;
+		width:100%;
+	}
 	#mainBody {
-    padding: 50px
+    width:100%;
   	}
+  	.bar{
+  		display:block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		padding-left: 20px;
+  		width:200px;
+  		height:100%;
+  		padding-top: 0px;
+  	}
+  	.leftend, .rightend {
+  		border-radius: 0px;
+  	}
+  	.instruction-answer{
+	text-align: center;
+}
+}
+
+/* stacks elements of nav bar */
+
+@media screen and (max-width: 850px){
+  	#mainBody {
+    padding: 50px
+	}
+	.barf	{
+	display: none;
+	}
+}
+
+@media screen and (max-width: 900px){
+	#picright{
+		padding: 0;
+		float: none;
+		display: block;
+	}
+	#picleft{
+		padding: 0;
+		float: none;
+		display: block;
+	}
 }

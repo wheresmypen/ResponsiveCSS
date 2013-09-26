@@ -1,12 +1,15 @@
 <!-- And now I am off the to f'in races!! -->
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" type="text/css" href="main.css">
-     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	<meta name="viewport" content="width=device-width, initial-scale=7">
     <title>RESPONSIVE DESIGN</title>
 </head>
 
@@ -14,11 +17,79 @@
 
 <body>
 
+<div id="sidebar">
+<ul>
+<li>Main page</li>
+<li>Contents</li>
+<li>Featured content</li>
+<li>Current events</li>
+<li>Random article</li>
+<li>Donate to Wikipedia</li>
+<li>Wikimedia Shop</li>
+</ul>
+
+<ul>
+<h3>Interaction</h3>
+<li>Help</li>
+<li>About Wikipedia</li>
+<li>Community portal</li>
+<li>Recent changes</li>
+<li>Contact page</li>
+</ul>
+
+<ul>
+<h3>Toolbox</h3>
+<li>What links here</li>
+<li>Related changes</li>
+<li>Upload file</li>
+<li>Special pages</li>
+<li>Permanent link</li>
+<li>Page information</li>
+<li>Data item</li>
+<li>Cite this page</li>
+</ul>
+
+<ul>
+<h3>Print/export</h3>
+<li>Create a book</li>
+<li>Download as PDF</li>
+<li>Printable version</li>
+</ul>
+
+<ul>
+<h3>Languages</h3>
+<li>Català</li>
+<li>Česky</li>
+<li>Deutsch</li>
+<li>Español</li>
+<li>Français</li>
+<li>Italiano</li>
+<li>Nederlands</li>
+<li>Português</li>
+<li>Русский</li>
+<li>Svenska</li>
+<li>中文</li>
+</ul>
+</div>
+
 <div id="mainBody">
 <h1>Responsive web design</h1>
 <h4>From Wikipedia, the free encyclopedia</h4>
 <p class="filler text">Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).
 A site designed with RWD adapts the layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries, an extension of the @media rule.</p>
+
+<div class="instruction-answer">
+	<nav>
+	<ul>
+		<li class="bar leftend"><a class="menu" href="#">Home</a></li>
+		<li class="bar"><a class="menu" href="#">Products</a></li>
+		<li class="bar"><a class="menu" href="#">About</a></li>
+		<li class="bar"><a class="menu" href="#">News</a></li>
+		<li class="bar rightend"><a class="menu" href="#">Contact</a></li>
+	</ul>
+	</nav>
+</div>
+
 <ul>
 <li>The fluid grid concept calls for page element sizing to be in relative units like percentages, rather than absolute units like pixels or points.</li>
 <li>Flexible images are also sized in relative units, so as to prevent them from displaying outside their containing element.</li>
@@ -50,10 +121,38 @@ A site designed with RWD adapts the layout to the viewing environment by using f
 <p class="section text">Mashable called 2013 the Year of Responsive Web Design. Many other sources have recommended responsive design as a cost-effective alternative to mobile applications.</p>
 <p class="section text">Forbes explains why you need to prioritize responsive design right now.</p>
 <p class="section text">In late 2012, Google recommended responsive design in its Webmaster’s Guide: “Google recommends webmasters follow the industry best practice of using responsive web design, namely serving the same HTML for all devices and using only CSS media queries to decide the rendering on each device.”<p>
+
+
+<h2>See also</h2>
+</div>
+
+<div id="photos2display">
+
+	<img class="fphoto" id="fpleft" src="same_right.jpg">	
+	<img class="fphoto" id="pic" src="length.jpeg">
+	<img class="fphoto" id="fpright" src="same_left.jpg">
+
+</div>
+
+<div id="gallery">
+	<img class="sphoto" id="picleft" src="optical.jpeg">
+	<img class="sphoto" id="picright" src="dimension.jpeg">
 </div>
 
 </body>
 <footer>
-<h2>See also</h2>
+
+  	<div class="instruction-answer">
+		<nav>
+		<ul>
+			<li class="barf"><a class="menu" href="#">Home</a></li>
+			<li class="barf"><a class="menu" href="#">Products</a></li>
+			<li class="barf"><a class="menu" href="#">About</a></li>
+			<li class="barf"><a class="menu" href="#">News</a></li>
+			<li class="barf"><a class="menu" href="#">Contact</a></li>
+		</ul>
+		</nav>
+    </div>
+
 </footer>
 </html>
